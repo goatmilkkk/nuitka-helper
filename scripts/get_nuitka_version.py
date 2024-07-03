@@ -16,7 +16,7 @@ def get_nuitka_version():
     # find Nuitka version using regex
     func = ida_funcs.get_func(ea)
     pseudocode = str(ida_hexrays.decompile(func))
-    nuitka_version = ".".join([i.replace("i64", "") for i in re.findall("PyLong_FromLong\((.*?)\)", pseudocode)])
+    nuitka_version = ".".join([i.replace("i64", "").replace("LL", "") for i in re.findall("PyLong_FromLong\((.*?)\)", pseudocode)])
     if nuitka_version:
         print(f"Nuitka Version: {nuitka_version}")
     else:

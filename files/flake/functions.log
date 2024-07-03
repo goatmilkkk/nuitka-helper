@@ -1,0 +1,26 @@
+[__main__]
+NoDefaultRoot()
+Tcl(screenName=None, baseName=None, className='Tk', useTk=0)
+btn_submit_clicked()
+change_direction(new_direction)
+check_collisions()
+check_snake_length(snake, expected_length)
+dataclass(cls=None, /, *, init=True, repr=True, eq=True, order=False, unsafe_hash=False, frozen=False)
+game_over()
+game_win()
+get_flag(xk, k=b'T\x00\xc6\x88g\xf9_nx}\x91]X\xb2^g[\xf40\x860\xe4D\x19\xea\x94\x136\x97m\xc9\xd8\xb9r?(\xe8\xea\r3\x92\x8e\xa9\x03\xef\xa8\x8e\x9d\xb7\x83')
+getboolean(s)
+image_names()
+image_types()
+mainloop(n=0)
+next_turn()
+open_new_top_player_window()
+read_config()
+scale_window(wndw)
+shame(actual, expected)
+
+[flag]
+check_snake_length(snake, expected_length)
+get_flag(xk, k=b'T\x00\xc6\x88g\xf9_nx}\x91]X\xb2^g[\xf40\x860\xe4D\x19\xea\x94\x136\x97m\xc9\xd8\xb9r?(\xe8\xea\r3\x92\x8e\xa9\x03\xef\xa8\x8e\x9d\xb7\x83')
+shame(actual, expected)
+

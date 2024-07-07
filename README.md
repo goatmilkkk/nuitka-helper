@@ -145,3 +145,9 @@ The answers are in the blog for these questions:
   - A: First, doing so enables me to trace the module dictionary, which changes at different points of the program. Second, I want the parsing algorithm to be independent of how Nuitka loads its constants, in case it gets updated in the future.
 - Q: What Nuitka versions does this tool support?
   - A: I only tested the tool on `flake` (1.8.0) & `GhostLocker` (1.8.4), but I think it should (somewhat) work for other versions too. I did not test the tool on any commercial Nuitka binaries.
+- Q: What can I do if the tool breaks?
+  - A: Here are some things you can try:
+    1. Manually identify `modulecode__main__` using the `Loaded %s` string instead of `__main__`
+    2. Manually identify important library functions (i.e. `loadConstantsBlob`, `Nuitka_Function_New`)
+    3. `ida_typeinf.get_arg_addrs` might be broken (function typed wrongly/remote debugging buggy)
+    4. Let the binary automatically load the constants instead of forcibly loading them

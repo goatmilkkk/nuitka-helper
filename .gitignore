@@ -4,7 +4,6 @@
 *.pdb
 *.xml
 
-projects/flake/
-projects/ghostlocker/
-projects/**/*build/
-projects/**/*dist/
+examples/**/*build/
+examples/**/*dist/
+samples/

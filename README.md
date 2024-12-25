@@ -78,7 +78,7 @@ nuitka-helper is a collection of IDAPython scripts to help analyze Nuitka binari
             flake.sig
             solve.py
  
-├───projects
+├───examples
     ├───types: (test cases for parse_module_constants.py)
     │       scalar
     │       collections
